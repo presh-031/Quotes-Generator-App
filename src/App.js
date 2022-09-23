@@ -1,13 +1,13 @@
-import { MdTrendingFlat } from "react-icons/md";
+import { MdTrendingFlat, MdCached } from "react-icons/md";
 
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header>
         <div>random</div>
-        {/* <div>mode</div> */}
+        <MdCached size="2.2em" />
       </header>
       <main>
         <section className="quote">
@@ -23,11 +23,13 @@ function App() {
             <p className="name">Bill Gates</p>
             <p className="about">business</p>
           </div>
-          <div></div>
+          <div>
+            <MdTrendingFlat size="2.5em" color="#fff" />
+          </div>
         </section>
       </main>
     </div>
   );
-}
+};
 
 export default App;
