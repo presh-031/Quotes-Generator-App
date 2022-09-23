@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div>
+          random
+          <img src="" alt="" />
+        </div>
+        <div>mode</div>
       </header>
+      <main>
+        <section className="quote">
+          <p>
+            “The first rule of any technology used in a business is that automation applied to an efficient operation
+            will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify
+            the inefficiency.”
+          </p>
+        </section>
+
+        <section className="person"></section>
+      </main>
     </div>
   );
 }
