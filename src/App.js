@@ -19,7 +19,6 @@ const App = () => {
     setQuote(newQuote);
     setAuthor(newQuoteAuthor);
     setGenre(newQuoteGenre);
-    // console.log(newQuote);
   }
 
   return (
