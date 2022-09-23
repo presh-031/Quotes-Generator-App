@@ -8,7 +8,7 @@ function App() {
           random
           <img src="" alt="" />
         </div>
-        <div>mode</div>
+        {/* <div>mode</div> */}
       </header>
       <main>
         <section className="quote">
@@ -19,7 +19,13 @@ function App() {
           </p>
         </section>
 
-        <section className="person"></section>
+        <section className="person">
+          <div>
+            <p className="name">Bill Gates</p>
+            <p className="about">business</p>
+          </div>
+          <div>d{/* arrow forward */}</div>
+        </section>
       </main>
     </div>
   );

@@ -8,6 +8,7 @@
   /* 700 */
   --montserrat: "";
 }
+
 *,
 *::after,
 *::before {
@@ -20,30 +21,64 @@
 header {
   display: flex;
   justify-content: flex-end;
-  outline: 1px solid #ff0000;
+  /* outline: 1px solid #ff0000; */
   padding: 3.1rem 10rem 0 10rem;
 }
+
 header div {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.16rem;
   color: #4f4f4f;
 }
+
 main {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0 auto;
   margin-top: 22.7rem;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
+
 main .quote {
   border-left: 8px solid #f7df94;
   margin-bottom: 10.9rem;
   padding-left: 9.9rem;
   width: 72.2rem;
 }
+
 main .quote p {
   font-size: 3.6rem;
   line-height: 4.32rem;
   text-align: left;
   font-weight: 500;
+}
+
+main .person {
+  /* outline: 1px solid red; */
+  background-color: #333333;
+  height: 15.1rem;
+  width: 67.2rem;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f2f2f2;
+  padding-left: 2.9rem;
+  padding-right: 3.9rem;
+}
+
+main .person div:first-child .name {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.818rem;
+}
+
+main .person div:first-child .about {
+  color: #828282;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.644rem;
+  margin-top: 0.8rem;
 }
