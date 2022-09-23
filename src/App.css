@@ -30,7 +30,12 @@ header div {
   font-size: 1.8rem;
   line-height: 2.16rem;
   color: #4f4f4f;
-  margin-right: 1.1rem;
+  /* outline: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+header div .random-icon {
+  margin-left: 1.1rem;
 }
 
 main {
