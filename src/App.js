@@ -1,13 +1,12 @@
+import { MdTrendingFlat } from "react-icons/md";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <div>
-          random
-          <img src="" alt="" />
-        </div>
+        <div>random</div>
         {/* <div>mode</div> */}
       </header>
       <main>
@@ -24,7 +23,7 @@ function App() {
             <p className="name">Bill Gates</p>
             <p className="about">business</p>
           </div>
-          <div>d{/* arrow forward */}</div>
+          <div></div>
         </section>
       </main>
     </div>
