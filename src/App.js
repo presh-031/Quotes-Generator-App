@@ -30,20 +30,12 @@ const App = () => {
       </header>
       <main>
         <section className="quote">
-          <p>
-            {/* “The first rule of any technology used in a business is that automation applied to an efficient operation
-            will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify
-            the inefficiency.” */}
-            {quote}
-          </p>
+          <p>{quote}</p>
         </section>
 
         <section className="person">
           <div>
-            <p className="name">
-              {/* Bill Gates */}
-              {author}
-            </p>
+            <p className="name">{author}</p>
             <p className="about">{genre}</p>
           </div>
           <div>
