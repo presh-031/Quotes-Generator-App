@@ -92,3 +92,9 @@ main .person div:first-child .about {
 main .person div:last-child img {
   fill: #fff;
 }
+
+@media (max-width: 1024px) {
+  main .quote p {
+    font-size: 2.5rem;
+  }
+}
