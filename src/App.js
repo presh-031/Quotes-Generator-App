@@ -7,6 +7,7 @@ const App = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [genre, setGenre] = useState("");
+  const [quoteEl, setQuoteEl] = useState("");
 
   async function getQuotes() {
     const res = await fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random");
@@ -19,8 +20,22 @@ const App = () => {
     setQuote(newQuote);
     setAuthor(newQuoteAuthor);
     setGenre(newQuoteGenre);
+    setQuoteEl("");
   }
 
+  async function getAllQuotes() {
+    const res = await fetch(`https://quote-garden.herokuapp.com/api/v3/quotes?author=${author}`);
+    const data = await res.json();
+
+    // console.log(data.data);
+    const allQuotes = data.data;
+    setQuoteEl(
+      allQuotes.map((quoteObj) => {
+        return <Quote quote={quoteObj.quoteText} />;
+      })
+    );
+    setQuote("");
+  }
   return (
     <div className="App">
       <header>
@@ -30,8 +45,9 @@ const App = () => {
       </header>
       <main>
         <Quote quote={quote} />
+        {quoteEl}
 
-        <section className="person">
+        <section className="person" onClick={getAllQuotes}>
           <div>
             <p className="name">{author}</p>
             <p className="about">{genre}</p>
