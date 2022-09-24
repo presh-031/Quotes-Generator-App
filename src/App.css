@@ -21,7 +21,7 @@
 header {
   display: flex;
   justify-content: flex-end;
-  outline: 1px solid #ff0000;
+  /* outline: 1px solid #ff0000; */
   padding: 3.1rem 6.94% 0 6.94%;
 }
 
@@ -33,14 +33,31 @@ header div {
   /* outline: 1px solid red; */
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+header div:hover {
+  background-color: #333333;
+  color: #f2f2f2;
+}
+header div:hover .random-icon {
+  animation: loading 1.5s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(-0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 header div .random-icon {
   /*  */
   margin-left: 1.1rem;
 }
 
 main {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0 auto;
   margin-top: 22.7rem;
   /* width: fit-content; */
