@@ -21,8 +21,8 @@
 header {
   display: flex;
   justify-content: flex-end;
-  /* outline: 1px solid #ff0000; */
-  padding: 3.1rem 10rem 0 10rem;
+  outline: 1px solid #ff0000;
+  padding: 3.1rem 6.94% 0 6.94%;
 }
 
 header div {
@@ -35,23 +35,27 @@ header div {
   align-items: center;
 }
 header div .random-icon {
+  /*  */
   margin-left: 1.1rem;
 }
 
 main {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   margin: 0 auto;
   margin-top: 22.7rem;
-  width: fit-content;
+  /* width: fit-content; */
+  /* width: 72.2rem; */
+  width: 49.5%;
   display: flex;
   flex-direction: column;
 }
 
 main .quote {
-  border-left: 8px solid #f7df94;
+  outline: 1px solid red;
+  border-left: 0.8rem solid #f7df94;
   margin-bottom: 10.9rem;
-  padding-left: 9.9rem;
-  width: 72.2rem;
+  /* padding-left: 9.9rem; */
+  padding-left: 13.7%;
 }
 
 main .quote p {
@@ -93,8 +97,22 @@ main .person div:last-child img {
   fill: #fff;
 }
 
+/*******************/
+/* Media Queries */
+/*******************/
 @media (max-width: 1024px) {
+  main .quote {
+    /* padding-left: 4rem; */
+  }
+  main .quote p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 800px) {
   main .quote p {
     font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
