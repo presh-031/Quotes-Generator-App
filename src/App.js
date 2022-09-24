@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
+import Quote from "./components/Quote";
 import { MdTrendingFlat, MdCached } from "react-icons/md";
 
 const App = () => {
@@ -29,9 +29,7 @@ const App = () => {
         </div>
       </header>
       <main>
-        <section className="quote">
-          <p>{quote}</p>
-        </section>
+        <Quote quote={quote} />
 
         <section className="person">
           <div>
