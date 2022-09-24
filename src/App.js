@@ -31,7 +31,7 @@ const App = () => {
     const allQuotes = data.data;
     setQuoteEl(
       allQuotes.map((quoteObj) => {
-        return <Quote quote={quoteObj.quoteText} />;
+        return <Quote key={quoteObj._id} quote={quoteObj.quoteText} />;
       })
     );
     setQuote("");
