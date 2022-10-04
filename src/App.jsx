@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Quote from "./components/Quote";
 import { MdTrendingFlat, MdCached } from "react-icons/md";
-import { BsFillSunFill } from "react-icons/bs";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import axios from "axios";
 
 const App = () => {
@@ -67,7 +67,7 @@ const App = () => {
           random <MdCached className="random-icon" size="2.2em" />
         </div>
         <div className="theme-btn" onClick={toggleTheme}>
-          <BsFillSunFill />
+          {theme === "light" ? <BsFillSunFill /> : <BsFillMoonFill />}
         </div>
       </header>
       <main>
