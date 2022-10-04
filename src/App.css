@@ -99,16 +99,20 @@ main .allquotes .author {
 
 main .person {
   /* outline: 1px solid red; */
-  background-color: #333333;
   height: 15.1rem;
   width: 67.2rem;
   align-self: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f2f2f2;
+  color: #333333;
   padding-left: 2.9rem;
   padding-right: 3.9rem;
+  cursor: pointer;
+}
+main .person:hover {
+  background-color: #333333;
+  color: #f2f2f2;
 }
 
 main .person div:first-child .name {
@@ -123,10 +127,6 @@ main .person div:first-child .about {
   font-size: 1.4rem;
   line-height: 1.644rem;
   margin-top: 0.8rem;
-}
-
-main .person div:last-child img {
-  fill: #fff;
 }
 
 /*******************/

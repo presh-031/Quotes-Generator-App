@@ -1,0 +1,26 @@
+/* Dark */
+.dark {
+  background-color: rgb(23, 16, 35);
+  color: #fff;
+}
+.dark section {
+  background-color: rgb(23, 16, 35);
+}
+.dark footer {
+  background-color: rgb(23, 16, 35);
+}
+
+/* Light */
+.light {
+  /* background-color: #fff; */
+  /* color: #333; */
+}
+.light section {
+  background-color: rgb(0, 208, 255);
+}
+.light main button {
+  background-color: rgb(0, 208, 255);
+}
+.light footer {
+  background-color: rgb(0, 208, 255);
+}

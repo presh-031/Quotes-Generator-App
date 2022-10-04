@@ -6,6 +6,22 @@ import { BsFillSunFill } from "react-icons/bs";
 import axios from "axios";
 
 const App = () => {
+  // Colormode functionality
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  // App functionality
   const [quote, setQuote] = useState(null);
   const [author, setAuthor] = useState(null);
   const [genre, setGenre] = useState(null);
@@ -45,12 +61,12 @@ const App = () => {
       });
   }
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <header>
         <div className="random-btn" onClick={getQuote}>
           random <MdCached className="random-icon" size="2.2em" />
         </div>
-        <div className="theme-btn">
+        <div className="theme-btn" onClick={toggleTheme}>
           <BsFillSunFill />
         </div>
       </header>
