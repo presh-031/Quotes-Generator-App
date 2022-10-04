@@ -56,6 +56,7 @@ main {
   margin: 0 auto;
   margin-top: 22.7rem;
   width: 49.5%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
 }
@@ -115,11 +116,41 @@ main .person div:first-child .about {
     font-size: 3rem;
     line-height: 3.5rem;
   }
+  main .person {
+    height: 10.1rem;
+    width: 57.2rem;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   main .quote p {
     font-size: 2.5rem;
     line-height: 3rem;
+  }
+  main .person {
+    width: 40.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  main .quote p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  main .person {
+    width: 30.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 80%;
+  }
+  main .quote p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  main .person {
+    width: 100%;
   }
 }
