@@ -26,6 +26,9 @@
 .dark main .person div:first-child .about {
   color: #828282;
 }
+.dark footer {
+  color: #f2f2f2;
+}
 
 /* Light Mode*/
 .light {
@@ -58,4 +61,7 @@
 }
 .light main .person div:first-child .about {
   color: #828282;
+}
+.light footer {
+  color: #333333;
 }

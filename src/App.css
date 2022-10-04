@@ -89,6 +89,7 @@ main .person {
   padding-left: 2.9rem;
   padding-right: 3.9rem;
   cursor: pointer;
+  margin-bottom: 20.8rem;
 }
 
 main .person div:first-child .name {
@@ -103,6 +104,24 @@ main .person div:first-child .about {
   font-size: 1.4rem;
   line-height: 1.644rem;
   margin-top: 0.8rem;
+}
+footer {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+footer p a {
+  color: inherit;
+}
+footer p a .github {
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
+}
+footer p a .github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 /*******************/

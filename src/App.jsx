@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Quote from "./components/Quote";
 import { MdTrendingFlat, MdCached } from "react-icons/md";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill, BsFillMoonFill, BsGithub } from "react-icons/bs";
 import axios from "axios";
 import "./ColorMode.css";
 
@@ -37,7 +37,6 @@ const App = () => {
         setQuote(data.quoteText);
         setAuthor(data.quoteAuthor);
         setGenre(data.quoteGenre);
-        console.log(data);
       })
       .catch((error) => {
         console.log(error);
@@ -52,7 +51,6 @@ const App = () => {
       .get(`https://quote-garden.herokuapp.com/api/v3/quotes?author=${author}`)
       .then((response) => {
         const data = response.data.data;
-        console.log(data);
         setQuotesEl(
           data.map((quoteObj) => {
             return <Quote key={quoteObj._id} quote={quoteObj.quoteText} />;
@@ -100,6 +98,17 @@ const App = () => {
           </section>
         )}
       </main>
+      <footer>
+        <p>
+          -coded by &nbsp;
+          <a href="https://twitter.com/Presh_031" target="_blank" rel="noreferrer">
+            presh-031
+          </a>
+          <a target="_blank" href="https://github.com/presh-031" rel="noreferrer">
+            <BsGithub className="github" />
+          </a>
+        </p>
+      </footer>
     </div>
   );
 };
