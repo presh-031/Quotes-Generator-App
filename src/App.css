@@ -29,16 +29,16 @@ header div {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.16rem;
-  color: #4f4f4f;
+  /* color: #4f4f4f; */
   /* outline: 1px solid red; */
-  background-color: rgb(233, 233, 233);
+  /* background-color: rgb(233, 233, 233); */
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 header .random-btn:hover {
-  background-color: #333333;
-  color: #f2f2f2;
+  /* background-color: #333333;
+  color: #f2f2f2; */
 }
 header div:hover .random-icon {
   animation: loading 1.5s linear infinite;
@@ -61,8 +61,8 @@ header .theme-btn {
   padding: 0 1rem;
 }
 header .theme-btn:hover {
-  background-color: #333333;
-  color: #f2f2f2;
+  /* background-color: #333333;
+  color: #f2f2f2; */
 }
 
 main {
@@ -105,14 +105,14 @@ main .person {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #333333;
+  /* color: #333333; */
   padding-left: 2.9rem;
   padding-right: 3.9rem;
   cursor: pointer;
 }
 main .person:hover {
-  background-color: #333333;
-  color: #f2f2f2;
+  /* background-color: #333333;
+  color: #f2f2f2; */
 }
 
 main .person div:first-child .name {

@@ -4,6 +4,7 @@ import Quote from "./components/Quote";
 import { MdTrendingFlat, MdCached } from "react-icons/md";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import axios from "axios";
+import "./ColorMode.css";
 
 const App = () => {
   // Colormode functionality
