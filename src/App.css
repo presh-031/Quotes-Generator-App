@@ -31,11 +31,12 @@ header div {
   line-height: 2.16rem;
   color: #4f4f4f;
   /* outline: 1px solid red; */
+  background-color: rgb(233, 233, 233);
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-header div:hover {
+header .random-btn:hover {
   background-color: #333333;
   color: #f2f2f2;
 }
@@ -52,8 +53,16 @@ header div:hover .random-icon {
 }
 
 header div .random-icon {
-  /*  */
   margin-left: 1.1rem;
+}
+header .theme-btn {
+  /* outline: 1px solid red; */
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+header .theme-btn:hover {
+  background-color: #333333;
+  color: #f2f2f2;
 }
 
 main {

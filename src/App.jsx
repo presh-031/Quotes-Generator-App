@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Quote from "./components/Quote";
 import { MdTrendingFlat, MdCached } from "react-icons/md";
+import { BsFillSunFill } from "react-icons/bs";
 import axios from "axios";
 
 const App = () => {
@@ -49,7 +50,9 @@ const App = () => {
         <div className="random-btn" onClick={getQuote}>
           random <MdCached className="random-icon" size="2.2em" />
         </div>
-        <div></div>
+        <div className="theme-btn">
+          <BsFillSunFill />
+        </div>
       </header>
       <main>
         {quote && <Quote quote={quote} />}
