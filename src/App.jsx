@@ -22,7 +22,6 @@ const App = () => {
       .catch((error) => {
         console.log(error);
       });
-    // setQuotesEl("");
   }
   useEffect(() => {
     getQuote();
@@ -34,6 +33,11 @@ const App = () => {
       .then((response) => {
         const data = response.data.data;
         console.log(data);
+        setQuotesEl(
+          data.map((quoteObj) => {
+            return <Quote key={quoteObj._id} quote={quoteObj.quoteText} />;
+          })
+        );
       })
       .catch((error) => {
         console.log(error);
@@ -59,7 +63,12 @@ const App = () => {
       </header>
       <main>
         {quote && <Quote quote={quote} />}
-        {/* <div>{quotesEl}</div> */}
+        {quote ? null : (
+          <div>
+            <h2>{author}</h2>
+            {quotesEl}
+          </div>
+        )}
 
         {quote && (
           <section
