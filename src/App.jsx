@@ -49,12 +49,13 @@ const App = () => {
         <div className="random-btn" onClick={getQuote}>
           random <MdCached className="random-icon" size="2.2em" />
         </div>
+        <div></div>
       </header>
       <main>
         {quote && <Quote quote={quote} />}
         {quote ? null : (
-          <div>
-            <h2>{author}</h2>
+          <div className="allquotes">
+            <p className="author">{author}</p>
             {quotesEl}
           </div>
         )}

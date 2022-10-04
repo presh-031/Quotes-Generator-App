@@ -68,7 +68,7 @@ main {
 }
 
 main .quote {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   border-left: 0.8rem solid #f7df94;
   margin-bottom: 10.9rem;
   /* padding-left: 9.9rem; */
@@ -80,6 +80,12 @@ main .quote p {
   line-height: 4.32rem;
   text-align: left;
   font-weight: 500;
+}
+main .allquotes .author {
+  /* outline: 1px solid red; */
+  text-decoration: underline;
+  font-size: 4rem;
+  padding: 2rem;
 }
 
 main .person {
