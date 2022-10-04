@@ -43,17 +43,6 @@ const App = () => {
         console.log(error);
       });
   }
-  //   const data = await res.json();
-
-  //   // console.log(data.data);
-  //   const allQuotes = data.data;
-  //   setQuotesEl(
-  //     allQuotes.map((quoteObj) => {
-  //       return <Quote key={quoteObj._id} quote={quoteObj.quoteText} />;
-  //     })
-  //   );
-  //   setQuote("");
-  // }
   return (
     <div className="App">
       <header>
