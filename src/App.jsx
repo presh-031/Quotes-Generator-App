@@ -104,6 +104,7 @@ const App = () => {
           <a href="https://twitter.com/Presh_031" target="_blank" rel="noreferrer">
             presh-031
           </a>
+          &nbsp;
           <a target="_blank" href="https://github.com/presh-031" rel="noreferrer">
             <BsGithub className="github" />
           </a>
