@@ -3,7 +3,7 @@
   background-color: #424242;
 }
 .dark header div {
-  background-color: #333333;
+  /* background-color: #333333; */
   color: #f2f2f2;
 }
 .dark header .random-btn:hover {
@@ -14,12 +14,16 @@
   background-color: rgb(233, 233, 233);
   color: #4f4f4f;
 }
+.dark main .quote {
+  color: #f2f2f2;
+}
+.dark main .allquotes .author {
+  color: #f2f2f2;
+}
 .dark main .person {
   background-color: #333333;
   color: #f2f2f2;
 }
-/* .dark main .person:hover { */
-/* } */
 .dark main .person div:first-child .about {
   color: #828282;
 }
@@ -39,6 +43,12 @@
 .light header .theme-btn:hover {
   background-color: #333333;
   color: #f2f2f2;
+}
+.light main .quote {
+  color: #333333;
+}
+.light main .allquotes .author {
+  color: #333333;
 }
 .light main .person {
   color: #333333;

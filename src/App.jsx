@@ -77,9 +77,7 @@ const App = () => {
         {quote && <Quote quote={quote} />}
         {quote ? null : (
           <div className="allquotes">
-            <p className="author">
-              {author} -{}
-            </p>
+            <p className="author">{author}</p>
             {quotesEl}
           </div>
         )}
