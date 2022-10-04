@@ -19,6 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    localStorage.setItem("theme", theme);
     document.body.className = theme;
   }, [theme]);
 
@@ -36,6 +37,7 @@ const App = () => {
         setQuote(data.quoteText);
         setAuthor(data.quoteAuthor);
         setGenre(data.quoteGenre);
+        console.log(data);
       })
       .catch((error) => {
         console.log(error);
@@ -75,7 +77,9 @@ const App = () => {
         {quote && <Quote quote={quote} />}
         {quote ? null : (
           <div className="allquotes">
-            <p className="author">{author}</p>
+            <p className="author">
+              {author} -{}
+            </p>
             {quotesEl}
           </div>
         )}

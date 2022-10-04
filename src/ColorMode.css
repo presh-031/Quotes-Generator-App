@@ -1,7 +1,6 @@
-/* Dark */
+/* Dark Mode*/
 .dark {
-  /* background-color: #828282; */
-  background-color: rgb(233, 233, 233);
+  background-color: #424242;
 }
 .dark header div {
   background-color: #333333;
@@ -16,17 +15,16 @@
   color: #4f4f4f;
 }
 .dark main .person {
-  /* color: #333333; */
   background-color: #333333;
   color: #f2f2f2;
 }
-/* .dark main .person:hover {
-} */
+/* .dark main .person:hover { */
+/* } */
 .dark main .person div:first-child .about {
   color: #828282;
 }
 
-/* Light */
+/* Light Mode*/
 .light {
   background-color: #f2f2f2;
 }
